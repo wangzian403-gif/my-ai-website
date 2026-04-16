@@ -1,0 +1,7 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "builds": [
+    { "src": "*.html", "use": "@vercel/static" },
+    { "src": "*.py", "use": "@vercel/python" }
+  ]
+}

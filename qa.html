@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>阿柏的AI学习路径 | AI问答</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="qa">
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html">
+        <span class="brand-mark"></span>
+        <span>阿柏的AI学习路径</span>
+      </a>
+      <nav class="site-nav" aria-label="主导航">
+        <a href="index.html" class="nav-link">首页</a>
+        <a href="review.html" class="nav-link">学习复盘</a>
+        <a href="qa.html" class="nav-link">AI问答</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-main">
+    <section class="page-header page-enter">
+      <div class="container page-header-inner">
+        <p class="eyebrow">AI Q&A</p>
+        <h1>AI学习问答助手</h1>
+        <p>
+          这里整理了我在搭建网站和学习 AI 过程中的内容。
+          你可以像聊天一样向我提问，看看这个简洁的前端 AI 问答页面如何工作。
+        </p>
+      </div>
+    </section>
+
+    <section class="container chat-page page-enter">
+      <div class="chat-shell surface-card">
+        <div class="chat-messages" id="chatMessages">
+          <div class="message message-ai">
+            <div class="message-content">
+              <div class="message-meta">阿柏的学习助手</div>
+              <div class="message-bubble">
+                你好，我是阿柏的 AI 学习助手。你可以问我这个网站是怎么搭建的、我学了什么、我下一步准备做什么。
+              </div>
+            </div>
+          </div>
+          <div class="chat-helper-note">
+            你可以先点击下面的预设问题，也可以直接输入你最想了解的内容。
+          </div>
+        </div>
+
+        <div class="preset-section">
+          <button class="preset-question" type="button">你学了哪些内容？</button>
+          <button class="preset-question" type="button">这个网站是怎么做出来的？</button>
+          <button class="preset-question" type="button">你为什么开始学 AI？</button>
+          <button class="preset-question" type="button">你下一步准备做什么？</button>
+        </div>
+
+        <div class="chat-composer">
+          <label class="sr-only" for="questionInput">输入你的问题</label>
+          <textarea
+            id="questionInput"
+            class="chat-input"
+            rows="1"
+            placeholder="输入你想了解的问题..."
+          ></textarea>
+          <button id="askButton" class="btn btn-primary send-button" type="button">发送</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
